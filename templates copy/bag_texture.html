@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 2;
+  padding: 0;
+  width: 10%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+    <title>Upload Texture Image</title>
+    <ul>
+        <li><a  href="http://127.0.0.1:5000/home">Home</a></li>
+        <li><a class="active" href="http://127.0.0.1:5000/">Bags</a></li>
+        <li><a href="http://127.0.0.1:5000/garment">Garments</a></li>
+        <li><a href="https://forms.gle/HjjHQxesUDsqhak96">Feedback</a></li>
+    </ul>
+    <div style="margin-left:10%;padding:1px 16px;height:1000px;">
+    <h1>Upload Texture Image</h1>
+    <p>Example of texture image:</p>
+    <img src="/Users/spuliz/Desktop/schedio/static/img/pink.jpeg" alt="Bag" width="200" height="200" style='border: 1px solid;'/>
+    <br><br>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+</div>
